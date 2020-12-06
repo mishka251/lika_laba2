@@ -45,4 +45,4 @@ class Evristic(Solver):
             if (x - x_k) ** 2 + (y - y_k) ** 2 <= data.eps ** 2 and (grad[0] ** 2 + grad[1] ** 2) <= data.eps ** 2:
                 break
 
-        return ResultData(self.name, (x, y), 0, calls_count, path)
+        return ResultData(self.name, (x, y),data.function(x, y), 0, calls_count, path)

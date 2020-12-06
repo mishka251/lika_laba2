@@ -23,4 +23,4 @@ class GradientSolver(Solver):
             calls_count += 2
             path.append((x, y))
 
-        return ResultData(self.name, (x, y), 0, calls_count, path)
+        return ResultData(self.name, (x, y),data.function(x, y), 0, calls_count, path)

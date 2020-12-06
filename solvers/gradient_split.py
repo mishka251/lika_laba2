@@ -33,4 +33,4 @@ class GradientSplitSolver(Solver):
             calls_count += 2
             path.append((x, y))
 
-        return ResultData(self.name, (x, y), f_calls, calls_count, path)
+        return ResultData(self.name, (x, y), data.function(x, y), f_calls, calls_count, path)

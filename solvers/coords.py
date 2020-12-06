@@ -31,4 +31,4 @@ class CoordsSolver(Solver):
             path.append((x, y))
 
         path.append((x1, y1))
-        return ResultData(self.name, (x1, y1), f_calls, calls_count, path)
+        return ResultData(self.name, (x1, y1),data.function(x, y), f_calls, calls_count, path)
