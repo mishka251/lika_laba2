@@ -1,14 +1,13 @@
-
-from input_data import variant2
-from solvers import GradientSolver, GradientSplitSolver, CoordsSolver, Evristic, ConfigurationsConst, Simplex
 import numpy as np
 import matplotlib.pyplot as plt
+from input_data import variant2
+from solvers import GradientSolver, GradientSplitSolver, CoordsSolver, Evristic, ConfigurationsConst, Simplex
+
 
 solvers = [
     GradientSolver(alpha=0.3),
     GradientSplitSolver(alpha=0.3),
     CoordsSolver(alpha=0.3),
-    #Evristic(0.3, 0.3),
     ConfigurationsConst(0.5, 1e-4, 0.1),
     Simplex(0.5),
 ]
