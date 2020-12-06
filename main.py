@@ -1,6 +1,6 @@
 
 from input_data import variant2
-from solvers import GradientSolver, GradientSplitSolver, CoordsSolver, Evristic, ConfigurationsConst
+from solvers import GradientSolver, GradientSplitSolver, CoordsSolver, Evristic, ConfigurationsConst, Simplex
 
 
 solvers = [
@@ -9,6 +9,7 @@ solvers = [
     CoordsSolver(alpha=0.3),
     #Evristic(0.3, 0.3),
     ConfigurationsConst(0.5, 1e-4, 0.1),
+    Simplex(0.5),
 ]
 
 for solver in solvers:
